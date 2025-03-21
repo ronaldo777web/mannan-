@@ -1,0 +1,98 @@
+<html>
+<head>
+    
+    <title>K</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: peachpuff;
+        }
+        h1 {
+            color: blue;
+        }
+        .item {
+            background-color: yellow;
+            border: 2px solid #333;
+            padding: 10px;
+            margin: 10px;
+            display: inline-block;
+        }
+        .cart {
+            margin-top: 20px;
+            padding: 10px;
+            background-color:pink;
+            display: inline-block;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Sar , Zameen , Aasman , PAKISTAN. </h1>
+    <p>Click the button to add an item to the cart.</p>
+
+    <div class="item">
+        <p> ▄︻デ══━一- sniper ₹5000000</p>
+        <button onclick="addToCart('sniper')">Add to Cart</button>
+    </div>
+
+    <div class="item">
+        <p>/̵͇̿̿/’̿’̿ ̿ ̿̿ ̿̿ ̿̿💥 pistol- ₹200000</p>
+        <button onclick="addToCart('pistol')">Add to Cart</button>
+    </div>
+
+    <div class="item">
+        <p>︻デ═一 marksman rifle- ₹15000000</p>
+        <button onclick="addToCart('marksman rifle')">Add to Cart</button>
+    </div>
+ <div class="item">
+        <p≯̇̎/̸̄̿̅̎̎̅͆ ͆͆͆͆̔̿͞ ͆̅̿̄͞ ̿ ̄̇̿̚ ̎ ̎͆  laser gun - ₹39000000</p>
+        <button onclick="addToCart('laser gun')">Add to Cart</button>
+    </div>
+ <div class="item">
+        <p >ᡕᠵデ气亠 semi auto gun - ₹450000</p>
+        <button onclick="addToCart('semi auto gun')">Add to Cart</button>
+    </div>
+ <div class="item">
+        <p>▄︻╦芫≡══--  rifle - ₹25000000</p>
+        <button onclick="addToCart('rifle')">Add to Cart</button>
+    </div>
+ <div class="item">
+        <p> ▄︻デ══━一💥 manual, rifle - ₹950000</p>
+        <button onclick="addToCart('manual rifle')">Add to Cart</button>
+    </div>
+ <div class="item">
+        <p>☢️ 💣 nukes - ₹10000000000000000</p>
+        <button onclick="addToCart('nukes')">Add to Cart</button>
+    </div>
+ <div class="item">
+        <p> 💣 grenade ,  - ₹70000,  60000 for pakistani</p>
+        <button onclick="addToCart('grenade')">Add to Cart</button>
+    </div>
+ <div class="item">
+        <p>▬▬ι═══════ﺤ katana - ₹40000</p>
+        <button onclick="addToCart('katana')">Add to Cart</button>
+    </div>
+
+
+
+    <div class="cart">
+        <h3>Shopping Cart</h3>
+        <p id="cartList">Cart is empty</p>
+    </div>
+
+    <script>
+        function addToCart(item) {
+            let cart = document.getElementById("cartList");
+            if (cart.innerHTML === "Cart is empty") {
+                cart.innerHTML = item;
+            } else {
+                cart.innerHTML += ", " + item;
+            }
+        }
+    </script>
+
+</body>
+</html>
+
